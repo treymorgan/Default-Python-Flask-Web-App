@@ -1,0 +1,6 @@
+myenv/
+templates/archive/*
+config.py
+__pycache__
+.git
+instance/*

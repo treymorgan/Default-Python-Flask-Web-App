@@ -1,0 +1,93 @@
+.login-container {
+    display: flex; /* Makes the container a flex container, enabling the use of flexbox properties */
+    flex-direction: column; /* Stacks the flex items vertically */
+    justify-content: flex-start; /* Aligns the flex items at the start of the container */
+    align-items: center; /* Centers the flex items along the cross axis */
+    min-height: 100vh; /* Sets the minimum height of the container to 100% of the viewport height */
+    text-align: center; /* Centers the text inside the container */
+    padding-top: 50vh; /* Adds padding to the top of the container equal to 20% of the viewport height */
+    width: 100%; /* Sets the width of the container to 100% of its parent container */
+    max-width: 600px; /* Ensures that the container does not exceed 600 pixels in width */
+    margin: 0 auto; /* Centers the container horizontally within its parent container */
+}
+
+.register-container {
+    display: flex; /* Makes the container a flex container, enabling the use of flexbox properties */
+    flex-direction: column; /* Stacks the flex items vertically */
+    justify-content: flex-start; /* Aligns the flex items at the start of the container */
+    align-items: center; /* Centers the flex items along the cross axis */
+    min-height: 100vh; /* Sets the minimum height of the container to 100% of the viewport height */
+    text-align: center; /* Centers the text inside the container */
+    padding-top: 50vh; /* Adds padding to the top of the container equal to 20% of the viewport height */
+    width: 100%; /* Sets the width of the container to 100% of its parent container */
+    max-width: 600px; /* Ensures that the container does not exceed 600 pixels in width */
+    margin: 0 auto; /* Centers the container horizontally within its parent container */
+}
+
+.login-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="email"],
+.login-form textarea {
+    display: block; /* Makes the textarea display as a block element, causing it to start on a new line and take up the full width of its parent container */
+    margin-bottom: 10px; /* Adds 10 pixels of space below the textarea */
+    padding: 10px; /* Adds 10 pixels of padding inside the textarea */
+    font-size: 16px; /* Sets the font size inside the textarea to 16 pixels */
+    width: 100%; /* Sets the width of the textarea to 100% of its parent container */
+    border: 1px solid #ccc; /* Adds a 1 pixel solid border around the textarea with the color #ccc */
+    border-radius: 4px; /* Gives the textarea rounded corners with a radius of 4 pixels */
+    box-sizing: border-box; /* Includes the padding and border in the element's total width and height */
+}
+
+
+.login-form .button-container,
+.login-form .form-button {
+    display: flex;
+    justify-content: center;
+}
+
+.login-form input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: auto;
+    border: none;
+    border-radius: 4px;
+    background-color: #85BB65;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #659d48;
+}
+
+/* If there are any textarea elements on the login or register pages, they will be styled consistently */
+.login-form textarea {
+    resize: vertical;
+}
+
+.name-box {
+    width: 100%; /* Sets the width of the name box to 100% of its parent container */
+    padding: 8px; /* Adds 8 pixels of padding inside the name box */
+    border-radius: 4px; /* Gives the name box rounded corners with a radius of 4 pixels */
+    display: flex; /* Makes the name box a flex container */
+    flex-direction: column; /* Stacks the flex items vertically */
+    align-items: center; /* Centers the flex items along the cross axis */
+    flex-basis: 50%; /* Sets the initial main size of the flex items to 45% */
+    flex-wrap: wrap; /* Allows the flex items to wrap onto multiple lines */
+    justify-content: space-between; /* Distributes the space between the flex items evenly */
+}
+
+/* First Name and Last Name side by side */
+.first-last-name-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

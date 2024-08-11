@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <!-- Add your CSS files here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    {% block additional_styles %}{% endblock %}
+    <!-- You can also add other <head> elements here -->
+</head>
+<body>
+    <header>
+        <!-- Navigation Menu -->
+        <nav class="menu">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                {% if current_user.is_authenticated %}
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+                {% else %}
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                {% endif %}
+                <!-- Add other navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+    {% block content %}
+    <!-- This block will be replaced by the individual content of each page -->
+    {% endblock %}
+    </div>
+
+    <footer>
+        <!-- Footer Content -->
+        <p>© 2024 TryAIPrompt.com</p>
+    </footer>
+
+    <!-- Add any common JavaScript files at the end of the body -->
+</body>
+</html>
