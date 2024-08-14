@@ -113,5 +113,3 @@ The `config.py` file is used to manage sensitive information like the `SECRET_KE
 - **Scaling**: If you need to scale this application, consider deploying it on a cloud platform like AWS, Azure, or Google Cloud, and using a managed database service.
 
 ---
-
-This `README.md` should provide clear instructions and an overview of your application, making it easier for others (or yourself in the future) to understand, use, and deploy the code.
