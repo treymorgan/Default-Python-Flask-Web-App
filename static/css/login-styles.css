@@ -5,7 +5,7 @@
     align-items: center; /* Centers the flex items along the cross axis */
     min-height: 100vh; /* Sets the minimum height of the container to 100% of the viewport height */
     text-align: center; /* Centers the text inside the container */
-    padding-top: 50vh; /* Adds padding to the top of the container equal to 20% of the viewport height */
+    padding-top: 50vh; /* Adds padding to the top of the container equal to 50% of the viewport height */
     width: 100%; /* Sets the width of the container to 100% of its parent container */
     max-width: 600px; /* Ensures that the container does not exceed 600 pixels in width */
     margin: 0 auto; /* Centers the container horizontally within its parent container */
@@ -18,76 +18,73 @@
     align-items: center; /* Centers the flex items along the cross axis */
     min-height: 100vh; /* Sets the minimum height of the container to 100% of the viewport height */
     text-align: center; /* Centers the text inside the container */
-    padding-top: 50vh; /* Adds padding to the top of the container equal to 20% of the viewport height */
+    padding-top: 50vh; /* Adds padding to the top of the container equal to 50% of the viewport height */
     width: 100%; /* Sets the width of the container to 100% of its parent container */
     max-width: 600px; /* Ensures that the container does not exceed 600 pixels in width */
     margin: 0 auto; /* Centers the container horizontally within its parent container */
 }
 
 .login-form {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    width: 100%; /* Sets the width of the form to 100% of its parent container */
+    max-width: 600px; /* Ensures that the form does not exceed 600 pixels in width */
+    margin: 0 auto; /* Centers the form horizontally within its parent container */
 }
 
 .login-form input[type="text"],
 .login-form input[type="password"],
 .login-form input[type="email"],
 .login-form textarea {
-    display: block; /* Makes the textarea display as a block element, causing it to start on a new line and take up the full width of its parent container */
-    margin-bottom: 10px; /* Adds 10 pixels of space below the textarea */
-    padding: 10px; /* Adds 10 pixels of padding inside the textarea */
-    font-size: 16px; /* Sets the font size inside the textarea to 16 pixels */
-    width: 100%; /* Sets the width of the textarea to 100% of its parent container */
-    border: 1px solid #ccc; /* Adds a 1 pixel solid border around the textarea with the color #ccc */
-    border-radius: 4px; /* Gives the textarea rounded corners with a radius of 4 pixels */
-    box-sizing: border-box; /* Includes the padding and border in the element's total width and height */
+    display: block; /* Makes each input and textarea element display as a block, starting on a new line */
+    margin-bottom: 10px; /* Adds 10 pixels of space below each input and textarea element */
+    padding: 10px; /* Adds 10 pixels of padding inside each input and textarea element */
+    font-size: 16px; /* Sets the font size inside each input and textarea element to 16 pixels */
+    width: 100%; /* Sets the width of each input and textarea element to 100% of its parent container */
+    border: 1px solid #ccc; /* Adds a 1 pixel solid border around each input and textarea element with the color #ccc */
+    border-radius: 4px; /* Gives each input and textarea element rounded corners with a radius of 4 pixels */
+    box-sizing: border-box; /* Ensures that the padding and border are included in the element's total width and height */
 }
-
 
 .login-form .button-container,
 .login-form .form-button {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Makes the button container a flex container */
+    justify-content: center; /* Centers the submit button horizontally within its parent container */
 }
 
 .login-form input[type="submit"] {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    width: auto;
-    border: none;
-    border-radius: 4px;
-    background-color: #85BB65;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Adds 10 pixels of space above the submit button */
+    padding: 10px 20px; /* Adds 10 pixels of padding on the top and bottom, and 20 pixels on the left and right */
+    font-size: 16px; /* Sets the font size of the submit button to 16 pixels */
+    width: auto; /* Allows the submit button width to adjust automatically based on its content */
+    border: none; /* Removes the default border from the submit button */
+    border-radius: 4px; /* Gives the submit button rounded corners with a radius of 4 pixels */
+    background-color: #85BB65; /* Sets the background color of the submit button to a green shade */
+    color: white; /* Sets the text color of the submit button to white */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the submit button */
+    transition: background-color 0.3s ease; /* Adds a smooth transition effect when the background color changes */
 }
 
 .login-form input[type="submit"]:hover {
-    background-color: #659d48;
+    background-color: #659d48; /* Changes the background color of the submit button when hovered over */
 }
 
-/* If there are any textarea elements on the login or register pages, they will be styled consistently */
 .login-form textarea {
-    resize: vertical;
+    resize: vertical; /* Allows the textarea to be resized only vertically */
 }
 
 .name-box {
-    width: 100%; /* Sets the width of the name box to 100% of its parent container */
-    padding: 8px; /* Adds 8 pixels of padding inside the name box */
-    border-radius: 4px; /* Gives the name box rounded corners with a radius of 4 pixels */
-    display: flex; /* Makes the name box a flex container */
+    width: 100%; /* Sets the width of the name input fields to 100% of their parent container */
+    padding: 8px; /* Adds 8 pixels of padding inside the name input fields */
+    border-radius: 4px; /* Gives the name input fields rounded corners with a radius of 4 pixels */
+    display: flex; /* Makes the name input fields a flex container */
     flex-direction: column; /* Stacks the flex items vertically */
     align-items: center; /* Centers the flex items along the cross axis */
-    flex-basis: 50%; /* Sets the initial main size of the flex items to 45% */
-    flex-wrap: wrap; /* Allows the flex items to wrap onto multiple lines */
+    flex-basis: 50%; /* Sets the initial size of the flex items to 50% of the container */
+    flex-wrap: wrap; /* Allows the flex items to wrap onto multiple lines if necessary */
     justify-content: space-between; /* Distributes the space between the flex items evenly */
 }
 
-/* First Name and Last Name side by side */
 .first-last-name-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+    display: flex; /* Makes the container a flex container */
+    width: 100%; /* Sets the width of the container to 100% of its parent container */
+    justify-content: space-between; /* Distributes the space between the first and last name input fields evenly */
 }

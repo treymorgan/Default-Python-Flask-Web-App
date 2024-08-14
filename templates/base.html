@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Specifies the character encoding for the document -->
     <meta charset="UTF-8">
+    <!-- Sets the viewport to ensure proper scaling on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title of your website, displayed in the browser tab -->
     <title>Your Website Title</title>
-    <!-- Add your CSS files here -->
+    <!-- Link to your main CSS file located in the static/css/ directory -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!-- Block for additional styles that can be overridden or added by individual pages -->
     {% block additional_styles %}{% endblock %}
-    <!-- You can also add other <head> elements here -->
+    <!-- Additional <head> elements like icons or other meta tags can be added here -->
 </head>
 <body>
     <header>
         <!-- Navigation Menu -->
         <nav class="menu">
             <ul>
+                <!-- Link to the Home page -->
                 <li><a href="{{ url_for('index') }}">Home</a></li>
                 {% if current_user.is_authenticated %}
+                <!-- If the user is logged in, show Logout and Register links -->
                 <li><a href="{{ url_for('logout') }}">Logout</a></li>
                 <li><a href="{{ url_for('register') }}">Register</a></li>
                 {% else %}
+                <!-- If the user is not logged in, show the Login link -->
                 <li><a href="{{ url_for('login') }}">Login</a></li>
                 {% endif %}
-                <!-- Add other navigation links as needed -->
+                <!-- Additional navigation links can be added as needed -->
             </ul>
         </nav>
     </header>
 
     <div class="content">
+    <!-- Block for page-specific content that will be replaced by the content of each page -->
     {% block content %}
-    <!-- This block will be replaced by the individual content of each page -->
     {% endblock %}
     </div>
 
     <footer>
-        <!-- Footer Content -->
+        <!-- Footer Content, like copyright or other information -->
         <p>© 2024 NewWebsite.com</p>
     </footer>
 
-    <!-- Add any common JavaScript files at the end of the body -->
+    <!-- Add any common JavaScript files here at the end of the body for faster loading -->
 </body>
 </html>

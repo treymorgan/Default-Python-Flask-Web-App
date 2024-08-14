@@ -1,66 +1,59 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #121212;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* text-align: center; */
-    color: white;
-    font-family: Arial, sans-serif;
-    flex-direction: column;
+    margin: 0; /* Removes the default margin from the body and html elements */
+    padding: 0; /* Removes the default padding from the body and html elements */
+    width: 100%; /* Sets the width of the body and html elements to 100% of the viewport width */
+    height: 100%; /* Sets the height of the body and html elements to 100% of the viewport height */
+    background-color: #121212; /* Sets a dark background color for the entire page */
+    display: flex; /* Makes the body a flex container, enabling the use of flexbox properties */
+    justify-content: center; /* Centers the content horizontally within the viewport */
+    align-items: center; /* Centers the content vertically within the viewport */
+    color: white; /* Sets the default text color to white */
+    font-family: Arial, sans-serif; /* Sets the default font family to Arial, with a fallback to sans-serif */
+    flex-direction: column; /* Stacks the flex items vertically */
 }
 
-/* Base styles for content - using flexbox for centering */
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 5% 10%; /* Top and Bottom: 5%, Left and Right: 10% */
+    display: flex; /* Makes the content container a flex container */
+    flex-direction: column; /* Stacks the flex items vertically */
+    align-items: center; /* Centers the flex items along the cross axis */
+    justify-content: flex-start; /* Aligns the flex items at the start of the container */
+    padding: 5% 10%; /* Adds padding of 5% on the top and bottom, and 10% on the left and right */
 }
 
 nav.menu {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    position: absolute; /* Positions the menu absolutely within its containing element */
+    top: 10px; /* Places the menu 10 pixels from the top of the containing element */
+    right: 10px; /* Places the menu 10 pixels from the right of the containing element */
 }
 
 nav.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    list-style-type: none; /* Removes the default list style (bullets) from the list */
+    margin: 0; /* Removes the default margin from the list */
+    padding: 0; /* Removes the default padding from the list */
 }
 
 nav.menu ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline; /* Displays the list items inline, making them appear next to each other */
+    margin-right: 20px; /* Adds 20 pixels of space to the right of each list item */
 }
 
 nav.menu ul li a {
-    text-decoration: none;
-    color: white;
+    text-decoration: none; /* Removes the underline from the links */
+    color: white; /* Sets the link color to white */
 }
 
 nav.menu ul li a:hover {
-    color: #cccccc;
+    color: #cccccc; /* Changes the link color to a lighter shade of gray when hovered over */
 }
 
 body > *:not(footer) {
-    flex-grow: 1;
+    flex-grow: 1; /* Allows all elements except the footer to grow and fill the available space */
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    width: 100%;
-    padding: 10px 0;
+    background-color: #333; /* Sets the footer background color to a dark gray */
+    color: white; /* Sets the footer text color to white */
+    text-align: center; /* Centers the text inside the footer */
+    width: 100%; /* Sets the width of the footer to 100% of its parent container */
+    padding: 10px 0; /* Adds 10 pixels of padding on the top and bottom of the footer */
 }
-
-
-
-
-

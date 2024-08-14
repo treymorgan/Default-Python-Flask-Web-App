@@ -1,20 +1,29 @@
 {% extends 'base.html' %}
+<!-- Extends the base.html template, inheriting its structure -->
 
 {% block title %}Login{% endblock %}
+<!-- Sets the title of the page to 'Login', overriding the default title in base.html -->
 
 {% block additional_styles %}
+<!-- Adds a specific CSS file for the login page, overriding or adding to the styles in base.html -->
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login-styles.css') }}">
 {% endblock %}
 
 {% block content %}
+<!-- Content specific to the login page -->
 <div class="login-container">
     <h2>Login</h2>
+    <!-- The form where users input their login credentials -->
     <form action="/login" method="POST" class="login-form">
+        <!-- Input field for the username -->
         <input type="text" name="username" placeholder="Username" required>
+        <!-- Input field for the password -->
         <input type="password" name="password" placeholder="Password" required>
         <div class="button-container">
+            <!-- Submit button for the login form -->
             <input type="submit" value="Login">
         </div>
     </form>    
 </div>
 {% endblock %}
+<!-- End of the content block for the login page -->

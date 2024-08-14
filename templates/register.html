@@ -1,25 +1,38 @@
 {% extends 'base.html' %}
+<!-- Extends the base.html template, inheriting its structure -->
 
 {% block title %}Register{% endblock %}
+<!-- Sets the title of the page to 'Register', overriding the default title in base.html -->
 
 {% block additional_styles %}
+<!-- Adds a specific CSS file for the register page, similar to the login page styles -->
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login-styles.css') }}">
 {% endblock %}
 
 {% block content %}
+<!-- Content specific to the registration page -->
 <div class="register-container">
     <h2>Register</h2>
+    <!-- The form where users input their registration details -->
     <form method="post" action="{{ url_for('register') }}" class="login-form">
-            <div class="first-last-name-container">
+        <!-- Container for first and last name input fields -->
+        <div class="first-last-name-container">
+            <!-- Input field for the first name -->
             <input type="text" name="first_name" placeholder="First Name" required class="name-box">
+            <!-- Input field for the last name -->
             <input type="text" name="last_name" placeholder="Last Name" required class="name-box">
-            </div>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" id="username" name="username" placeholder="Choose a Username" required>
-            <input type="password" id="password" name="password" placeholder="Create a Password" required>
+        </div>
+        <!-- Input field for the email address -->
+        <input type="email" name="email" placeholder="Email" required>
+        <!-- Input field for choosing a username -->
+        <input type="text" id="username" name="username" placeholder="Choose a Username" required>
+        <!-- Input field for creating a password -->
+        <input type="password" id="password" name="password" placeholder="Create a Password" required>
         <div class="button-container">
+            <!-- Submit button for the registration form -->
             <input type="submit" value="Register">
         </div>
     </form>
 </div>
 {% endblock %}
+<!-- End of the content block for the registration page -->
