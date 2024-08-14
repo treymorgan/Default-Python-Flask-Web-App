@@ -1,7 +1,3 @@
-Certainly! Here's a sample `README.md` file for your Python web application:
-
----
-
 # Default Python Web Application
 # Author: Trey Morgan
 # Purpose: This is the default template that I wrote to setup basic functionality for my python websites.
